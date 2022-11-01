@@ -22,17 +22,22 @@ const { conn } = require('./src/db.js');
 const { getGenres } = require('./src/routes/routesGenre/controllerGenre')
 const { getAllPlatforms } = require('./src/routes/routesPlatforms/controllerPlatforms');
 
-const {PORT} = process.env
+const PORT = process.env.PORT
 
 // Syncing all the models at once.
-conn.sync({ force: false }).then(() => {
-        getAllPlatforms()
-        getGenres();
-        server.listen(PORT, () => {
+// conn.sync({ force: false }).then(() => {
+//         getAllPlatforms()
+//         getGenres();
+//         server.listen(PORT, () => {
+//             console.log(`%s listening at ${PORT}`);
+//             ; 
+//         });
+//     })
+//     .catch(error => {
+//         return error
+//     })
+
+server.listen(PORT, () => {
             console.log(`%s listening at ${PORT}`);
             ; 
         });
-    })
-    .catch(error => {
-        return error
-    })

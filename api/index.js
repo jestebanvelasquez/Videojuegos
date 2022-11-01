@@ -22,7 +22,7 @@ const { conn } = require('./src/db.js');
 const { getGenres } = require('./src/routes/routesGenre/controllerGenre')
 const { getAllPlatforms } = require('./src/routes/routesPlatforms/controllerPlatforms');
 
-const PORT = process.env.PORT
+const {PORT} = process.env
 
 // Syncing all the models at once.
 conn.sync({ force: false }).then(() => {

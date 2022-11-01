@@ -36,6 +36,7 @@ const PORT = process.env.PORT
 //     .catch(error => {
 //         return error
 //     })
+conn.sync({force:false})
 
 server.listen(PORT, () => {
             console.log(`%s listening at ${PORT}`);

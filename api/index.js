@@ -28,10 +28,9 @@ conn.sync({ force: false }).then(() => {
         getAllPlatforms()
         getGenres();
         server.listen(PORT, () => {
-            console.log('listening at 'PORT ); // eslint-disable-line no-console
+            ; // eslint-disable-line no-console
         });
     })
     .catch(error => {
-        console.log(error)
         return error
     })

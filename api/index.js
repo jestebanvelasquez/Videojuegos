@@ -25,14 +25,18 @@ require('dotenv').config();
 
 const PORT = process.env.PORT
 
-conn.sync({ force: false }).then(() => {
-        getAllPlatforms()
-        getGenres();
-        server.listen(PORT, () => {
+// conn.sync({ force: false }).then(() => {
+//         getAllPlatforms()
+//         getGenres();
+//         server.listen(PORT, () => {
+//             console.log(`%s listening at ${PORT}`);
+//             ; 
+//         });
+//     })
+//     .catch(error => {
+//         return error
+//     })
+server.listen(PORT, () => {
             console.log(`%s listening at ${PORT}`);
             ; 
         });
-    })
-    .catch(error => {
-        return error
-    })

@@ -15,11 +15,6 @@ const {
 } = require("./controllerVideogames");
 
 
-
-
-//Routes:
-//"released": "23/03/2017",
-
 //----------------------------- Post: http://localhost:3002/videogames----------------------------
 
 router.post('/', async(req, res, next) => {
@@ -91,8 +86,6 @@ router.get('/name', async(req, res, next) => {
 router.get('/:id', async(req, res, next) => {
     try {
         const { id } = req.params;
-        console.log(id)
-        console.log(id)
         const byId = await getId(id)
         res.status(200).json({ data: byId })
     } catch (error) {
@@ -117,16 +110,6 @@ router.delete('/:id', async ( req, res, next) => {
     }
 })
 
-
-///// validation!! example:
-
-
-//importar: 
-// const {validateCreate} = require ('../../expressValidator/VideoGame')
-
-
-
-// router.post('/',  validateCreate, )
 
 
 module.exports = router;

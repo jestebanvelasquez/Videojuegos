@@ -18,7 +18,7 @@ import {
 
 export const getAllGames = () => dispatch =>{
     
-    return fetch('https://videogames-gamma.vercel.app/videogames')
+    return fetch('https://videojuegos-production.up.railway.app/')
                 .then(r => r.json())
                 .then(json =>{
                     console.log(json)
@@ -37,7 +37,7 @@ export const getAllGames = () => dispatch =>{
 
 export const getAllGenres = () => dispatch =>{
     
-    return fetch('https://videogames-gamma.vercel.app/genres')
+    return fetch('https://videojuegos-production.up.railway.app/genres')
                 .then(r => r.json())
                 .then(json =>{
                     dispatch({
@@ -54,7 +54,7 @@ export const getAllGenres = () => dispatch =>{
 }
 
 export const getAllPlatforms = () => dispatch => {
-    return fetch('https://videogames-gamma.vercel.app/platforms')
+    return fetch('https://videojuegos-production.up.railway.app/platforms')
                 .then(r => r.json())
                 .then(json => {
                     dispatch({
@@ -72,7 +72,7 @@ export const getAllPlatforms = () => dispatch => {
 
 export const getByName = (name) => dispatch =>{
     
-    return fetch(`https://videogames-gamma.vercel.app/videogames/name?name=${name}`)
+    return fetch(`https://videojuegos-production.up.railway.app/name?name=${name}`)
                 .then(r => r.json())
                 .then(json =>{
                     dispatch({
@@ -91,7 +91,7 @@ export const getByName = (name) => dispatch =>{
 
 export const getDetailGame = (id) => dispatch => {
 
-    return fetch(`https://videogames-gamma.vercel.app/videogames/${id}`)
+    return fetch(`https://videojuegos-production.up.railway.app/${id}`)
                 .then(r => r.json())
                 .then(json => {
                     dispatch({
@@ -108,7 +108,7 @@ export const getDetailGame = (id) => dispatch => {
 }
 
 export const getDataBase = (id) => dispatch => {
-    return fetch(`http://localhost:3002/videogames/database`)
+    return fetch(`https://videojuegos-production.up.railway.app/database`)
                 .then(r => r.json())
                 .then(json => {
                     dispatch({
@@ -125,7 +125,7 @@ export const getDataBase = (id) => dispatch => {
 }
 
 export const deleteGameDB = (id) => dispatch => {
-    return axios.delete(`https://videogames-gamma.vercel.app/videogames/${id}`)
+    return axios.delete(`https://videojuegos-production.up.railway.app/${id}`)
                 .then(json => {
                     dispatch({
                         type: DELETE_GAME_DB,

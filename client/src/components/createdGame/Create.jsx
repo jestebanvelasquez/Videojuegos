@@ -220,7 +220,7 @@ export default function Create() {
         
             //const response = 
             await axios({
-                url: 'http://localhost:3002/videogames',
+                url: 'https://videojuegos-production.up.railway.app/videogames',
                 method: 'POST',
                 data
             })

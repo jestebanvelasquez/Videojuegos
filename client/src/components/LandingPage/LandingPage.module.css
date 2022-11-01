@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+.landing {
+    background-image: url('../../assets/headers/background.svg');
+    background-size: cover;
+    margin: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #292828;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.title {
+    position: relative;
+    margin: 5%;
+    background-color: rgba(255, 200, 1, 0.796);
+    border-radius: 10px;
+}
+
+.title h1 {
+    color: rgb(63, 63, 65);
+    text-shadow: 2px 2px 2px rgb(102, 100, 100);
+    font-size: 5rem;
+}
+
+.bton {
+    background: rgb(255, 255, 255);
+    outline: none;
+    position: relative;
+    border: 2px solid gray;
+    padding: 15px 50px;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 0.8em;
+    border-radius: 20px;
+}
+
+.bton:hover {
+    transform: scale(200%);
+    transition: 1s ease-in-out;
+    color: gray;
+    background: white;
+}
+
+.bton::before {
+    content: attr(data-hover);
+    position: absolute;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.bton:hover::before {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.bton .hoverMe {
+    transition: all 0.3s ease-in-out;
+}
+
+.bton:hover .hoverMe {
+    opacity: 0;
+    transform: translate(100%, 0);
+}

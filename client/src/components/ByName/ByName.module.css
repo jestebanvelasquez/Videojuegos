@@ -1,0 +1,41 @@
+.contentName {
+    background-color: #292828;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    flex-direction: row;
+    position: relative;
+    width: 80%;
+    background: rgb(255, 213, 0);
+    border-radius: 10px;
+    font-size: 4rem;
+    color: rgb(44, 43, 43);
+    text-shadow: 3px 3px 3px #555;
+}
+
+.error {
+    background-color: #292828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.error h3 {
+    width: 90%;
+    background: rgb(113, 113, 113);
+    border-radius: 10px;
+    font-size: 2rem;
+    color: rgb(44, 43, 43);
+    text-transform: capitalize;
+    text-shadow: 3px 3px 3px #555;
+}

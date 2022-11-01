@@ -1,0 +1,128 @@
+.containerCreate {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: #29282800; */
+    /* background-color: #cdb21a; */
+    position: relative;
+}
+
+
+.title {
+    width: 100vw;
+    bottom: 500px;
+    /* right: 40%; */
+    /* bottom: 90px; */
+    display: flex;
+    position: absolute;
+    text-align: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    height: 30vh;
+    /* left: 10%; */
+    /* background-size: cover; */
+    /* overflow: hidden; */
+}
+
+.title h1 {
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(255, 187, 0);
+    color: rgb(63, 63, 65);
+    text-shadow: 2px 2px 2px rgb(102, 100, 100);
+    text-transform: capitalize;
+    opacity: 1;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.contentImages{
+    width: 100%;
+    /* background-color: rgba(53, 52, 50, 0.66); */
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    bottom: 10px;
+    
+}
+
+.imagestitle {
+    background-color: rgb(245, 197, 23);
+    color: rgb(63, 63, 65);
+    text-shadow: 2px 2px 2px rgba(102, 100, 100, 0.692);
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 5px;
+    width: 400px;
+
+}
+
+.firstImage {
+    background-color: #292828;
+    top: 0;
+    z-index: 22;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.firstImage img {
+    width: 100vw;
+    height: 100vh;
+    opacity: .6;
+    z-index: -1;
+}
+
+.preview {
+    
+    height: 50%;
+    position: relative;
+    justify-content: center;
+}
+
+.filters{
+    /* background-color: aqua; */
+    margin: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+margin: 20px;
+}
+
+.filterstitle{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.filterstitle h3 {
+    width: 600px;
+    text-align: center;
+    background-color: rgb(245, 197, 23);
+    color: rgb(55, 55, 55);
+    text-shadow: 2px 2px 2px rgba(102, 100, 100, 0.576);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.danger {
+    color: red;
+    font-size: 10px;
+}

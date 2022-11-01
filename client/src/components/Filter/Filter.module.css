@@ -1,0 +1,57 @@
+.filtersContain {
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    /* background-color: aliceblue; */
+    width: 100%;
+    max-width: auto;
+    max-height: auto;
+}
+
+.filter {
+    padding: 2px;
+    width: auto;
+    padding: 5px;
+}
+
+
+/* button */
+
+.bton {
+    padding: 3px 5px;
+    border: unset;
+    border-radius: 15px;
+    color: #ffffff;
+    z-index: 1;
+    background: #504f4f;
+    position: relative;
+    font-weight: 1000;
+    font-size: 14px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.bton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    background-color: #ffc60d;
+    transition: all 250ms
+}
+
+.bton:hover {
+    color: #131313;
+}
+
+.bton:hover::before {
+    width: 100%;
+}

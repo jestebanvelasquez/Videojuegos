@@ -1,0 +1,151 @@
+.containerPrev {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(74, 73, 73);
+    justify-content: center;
+    width:600px;
+    border-radius: 15px;
+}
+
+.contentImg {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    align-content: center;
+    align-items: center;
+    border-radius: 25px;
+    opacity: .9;
+}
+
+.contentImg img {
+    width:450px;
+    height: 400px;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+.containerDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 13px;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: scroll;
+    width: 100%;
+}
+
+.containerPrev h2 {
+    color: rgba(255, 200, 1, 0.796);
+    text-shadow: 2px 2px 2px rgb(102, 100, 100);
+    text-align: center;
+    background-color: rgba(31, 30, 30, 0.34);
+    height: 35px;
+    width: 400px;
+    text-transform: capitalize;
+    text-shadow: -1px 2px 2px rgb(96, 96, 96);
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.containerPrev blockquote {
+    margin: 5px 65px;
+    color: rgba(255, 200, 1, 0.796);
+    text-shadow: 2px 2px 2px rgb(102, 100, 100);
+    text-align: center;
+    background-color: rgba(31, 30, 30, 0.34);
+    height: 100px;
+    width: 80%;
+    text-transform: capitalize;
+    text-shadow: -1px 2px 2px rgb(96, 96, 96);
+    border-radius: 4px;
+    display: flow-root;
+    overflow: scroll;
+}
+
+.containerPrev span {
+    margin: 5px 65px;
+    padding-top: 15px;
+    color: rgba(255, 200, 1, 0.796);
+    text-shadow: 2px 2px 2px rgb(102, 100, 100);
+    text-align: center;
+    align-content: center;
+    background-color: rgba(31, 30, 30, 0.34);
+    height: 35px;
+    width: 80%;
+    text-transform: capitalize;
+    text-shadow: -1px 2px 2px rgb(96, 96, 96);
+    border-radius: 4px;
+    display: flow-root;
+    overflow: scroll;
+}
+
+.containerDatos p {
+    width: 50%;
+    margin: 10px;
+    background-color: rgb(245, 197, 23);
+    color: rgba(33, 32, 32, 0.745);
+    text-shadow: 2px 2px 2px rgba(102, 100, 100, 0.428);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.containerBton{
+    margin: 15px;
+    display: flex;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    justify-content:space-around;
+}
+
+.bton {    
+    width: 130px;
+    height: 50px;
+    border: unset;
+    border-radius: 15px;
+    color: #ffffff;
+    z-index: 1;
+    background: #919090;
+    position: relative;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 14px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(95, 95, 95, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.bton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(213, 162, 7, 0.27);
+    background-color: #ffffff;
+    transition: all 250ms
+}
+
+.bton:hover {
+    color: #131313;
+    box-shadow: 4px 8px 19px -3px rgba(255, 200, 3, 0.591);
+
+}
+
+.bton:hover::before {
+    width: 100%;
+}

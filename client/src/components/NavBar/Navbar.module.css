@@ -1,0 +1,34 @@
+.content {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: rgba(56, 56, 56, 0.558);
+}
+
+.ulItems {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.liItems a {
+    padding: 2rem 1.5rem;
+    padding-left: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.liItems a:hover {
+    color: rgb(33, 33, 32);
+    background-color: rgb(253, 208, 4);
+}

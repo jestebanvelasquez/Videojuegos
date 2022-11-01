@@ -1,0 +1,76 @@
+.container{
+    padding-right: 25px;
+}
+.contentInput input {
+    
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    size: 200px;
+    border: 8px;
+    background-color: rgb(198, 198, 196);
+    color: rgb(42, 40, 40);
+    font-size: 16px;
+}
+.contentForm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.containerBton{
+    /* top: 35px; */
+    display: flex;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    justify-content:space-around;
+}
+
+.bton {
+    /* top: 15px; */
+    margin-right: 10px;
+    margin-left: 20px;
+    width: 130px;
+    height: 38px;
+    /* padding: 30px 5px; */
+    border: unset;
+    border-radius: 10px;
+    color: #222121;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 14px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(95, 95, 95, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.bton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(213, 162, 7, 0.27);
+    background-color: rgb(255, 187, 0);
+    transition: all 250ms
+}
+
+.bton:hover {
+    color: #131313;
+    box-shadow: 4px 8px 19px -3px rgba(255, 200, 3, 0.591);
+
+}
+
+.bton:hover::before {
+    width: 100%;
+}
